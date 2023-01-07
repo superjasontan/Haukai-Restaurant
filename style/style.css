@@ -1,0 +1,183 @@
+/*-----universal box sizing---*/
+* {
+  box-sizing: border-box;
+}
+
+/*-----Body---*/
+body {
+  font: 1vw/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  /* for light Grey color */
+}
+
+header {
+  background: black;
+  /* for dark Grey color */
+  color: white;
+  /* for whitecolor */
+  min-height: 60px;
+  /* set a min-height to make it responsive and the screen is smaller and the text grows or the menu goes on next line we want the height to adjust */
+  border-bottom: darkorange 4px solid;
+  /* for orange color and then width and style*/
+}
+
+header .current a {
+  color: darkorange;
+  font-weight: bold;
+}
+
+footer {
+  background: black;
+  /* for dark Grey color */
+  color: white;
+  /* for whitecolor */
+  min-height: 60px;
+  /* set a min-height to make it responsive and the screen is smaller and the text grows or the menu goes on next line we want the height to adjust */
+  border-bottom: darkorange 4px solid;
+  text-align: center;
+  font-size: 1vw;
+}
+
+/****-- HomePage Banner --*****/
+/* this is the settings mainly for the global background image */
+.home-banner {
+  width: 100%;
+  min-height: 200px;
+  /*background:url(../images/title.png),no-repeat,0,-500px;
+*/
+  background-image: url(../images/title.png);
+  background-repeat: no-repeat;
+  /* Image doesn't repeat */
+  background-position: center center;
+  /* Image is centered vertically and horizontally at all times */
+  background-size: cover;
+  /* This is what makes the background image rescale based on its container's size */
+  margin-bottom: 30px;
+  /* after banner margin */
+  color: white;
+  text-align: center;
+  padding: 8vw;
+}
+
+.home-banner h1 {
+  font-size: 3vw;
+}
+
+.home-banner p {
+  font-size: 1.5vw;
+}
+
+/****-- Images with Link Styling --*****/
+.w3-third h3 {
+  font-size: 1.5vw;
+}
+
+/*----------------- Menu Page --------------*/
+table#Menu {
+  height: 80px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1vw;
+}
+
+table#Menu tr th {
+  background: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+table#Menu tr td {
+  background: grey;
+  color: white;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+table#MenuItems {
+  height: 250px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1vw;
+}
+
+table#MenuItems tr th {
+  background: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+table#MenuItems tr td {
+  background: grey;
+  color: white;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+#reservation-card {
+  box-shadow: 2px 2px 10px black;
+  border: none;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1vw 1vw;
+}
+
+#reservation-card h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: darkorange;
+  font-weight: bold;
+  padding-bottom: 1vw;
+  padding-top: 3vw;
+}
+
+@media screen and (max-width:530px) {
+  #reservation-card {
+      width: 100%;
+  }
+
+  table#Menu {
+      width: 100%;
+      font-size: 3vw;
+  }
+
+  table#MenuItems {
+      width: 100%;
+      font-size: 3vw;
+  }
+}
+
+/* image size*/
+img {
+  width: 400px;
+  height: 300px;
+  width: 100%;
+}
+
+/* logo image size*/
+.logo {
+  width: 120px;
+  height: 100px;
+  width: 100%;
+}
+
+/* text justify*/
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*----------------- Staff Page --------------*/
+table#staff {
+  height: 80px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3vw;
+}
