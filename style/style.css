@@ -3,6 +3,32 @@
     box-sizing: border-box;
 }
 
+/*-----Flexbox---*/
+/*-----To align a group of elements horizontally and distribute them evenly within the container---*/
+.container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-----To stack elements vertically and center them within the container---*/
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-----To create a grid layout with multiple rows and columns---*/
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 auto;
+    /* this will make the items adjust to the available space */
+}
+
+
 /*-----Body---*/
 body {
     font: 1vw/1.5 Arial, Helvetica, sans-serif;
